@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "rules": [
+    {
+      "resourcePattern": "^/admin/.*",
+      "actorPattern": ".*",
+      "decision": "REQUIRE_APPROVAL",
+      "priority": 10
+    },
+    {
+      "resourcePattern": "db:users",
+      "actorPattern": "service:ai-agent",
+      "decision": "BLOCK",
+      "priority": 5
+    },
+    {
+      "resourcePattern": ".*",
+      "actorPattern": ".*",
+      "decision": "ALLOW",
+      "priority": 100
+    }
+  ]
+}

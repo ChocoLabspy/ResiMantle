@@ -1,0 +1,28 @@
+{
+  "version": "0.1.0",
+  "layers": {
+    "surfaceCoat": {
+      "enabled": true,
+      "scanPaths": [
+        "."
+      ],
+      "ignorePatterns": [
+        "node_modules",
+        "dist",
+        ".git",
+        ".resimantle"
+      ]
+    },
+    "aiDefense": {
+      "enabled": true,
+      "proxyMode": false
+    },
+    "runtimeMonitor": {
+      "enabled": true,
+      "sampleRate": 1
+    }
+  },
+  "policy": {
+    "path": "./.resimantle/policy.json"
+  }
+}

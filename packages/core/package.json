@@ -1,0 +1,26 @@
+{
+  "name": "@resimantle/core",
+  "version": "0.1.0",
+  "description": "Core defensive engine for ResiMantle",
+  "main": "dist/index.js",
+  "types": "src/index.ts",
+  "private": true,
+  "scripts": {
+    "build": "tsup",
+    "clean": "rimraf dist",
+    "dev": "tsup --watch",
+    "lint": "eslint . --ext .ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@resimantle/types": "workspace:*",
+    "pino": "^9.0.0",
+    "pino-pretty": "^13.1.3",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.7.0"
+  }
+}

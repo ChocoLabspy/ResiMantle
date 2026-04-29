@@ -1,0 +1,45 @@
+{
+  "version": "0.1.0",
+  "layers": {
+    "surfaceCoat": {
+      "enabled": true,
+      "scanPaths": ["./src"],
+      "ignorePatterns": ["node_modules", "dist"]
+    },
+    "aiDefense": {
+      "enabled": true,
+      "proxyMode": true
+    },
+    "runtimeMonitor": {
+      "enabled": true,
+      "sampleRate": 0.5,
+      "control": {
+        "autoPosture": true,
+        "sessionTtlMs": 900000,
+        "heartbeatGraceMs": 45000,
+        "capabilityQuarantine": true
+      },
+      "containment": {
+        "mode": "adaptive",
+        "allow": {
+          "readPatterns": ["^vendor/legacy-safe-secret\\.txt$"],
+          "processPatterns": ["^powershell\\s+-Command\\s+Write-Output allowlisted$"],
+          "socketHosts": ["allowed.example.internal"],
+          "socketHostPatterns": ["^.*\\.trusted\\.internal$"],
+          "socketPathPatterns": []
+        }
+      },
+      "baseline": {
+        "enabled": true,
+        "mode": "assist",
+        "persistencePath": ".resimantle/runtime-baseline.json",
+        "minOccurrences": 3,
+        "autoApplyToContainment": true,
+        "reduceRiskFromKnownActivity": true
+      }
+    }
+  },
+  "policy": {
+    "path": "./.resimantle/policy.json"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@resimantle/types",
+  "version": "0.1.0",
+  "description": "Shared TypeScript definitions for ResiMantle",
+  "main": "dist/index.js",
+  "types": "src/index.ts",
+  "private": true,
+  "scripts": {
+    "build": "tsup",
+    "clean": "rimraf dist",
+    "dev": "tsup --watch",
+    "lint": "eslint . --ext .ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.7.0"
+  }
+}

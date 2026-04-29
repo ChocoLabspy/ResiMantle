@@ -1,0 +1,8 @@
+* @YOUR_USERNAME
+
+# Core Engine requires review by specific maintainers
+/packages/core/ @YOUR_USERNAME
+
+# Security policies and critical configs
+SECURITY.md @YOUR_USERNAME
+/packages/core/src/layers/policy-engine/ @YOUR_USERNAME
