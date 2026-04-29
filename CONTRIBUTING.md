@@ -40,7 +40,6 @@ This project follows the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.
 git clone https://github.com/ChocoLabspy/ResiMantle.git
 cd ResiMantle
 git remote rename origin upstream
-git remote add origin https://github.com/<your-github-user>/ResiMantle.git
 
 # Install dependencies
 pnpm install
@@ -57,6 +56,8 @@ pnpm typecheck
 # Run linting
 pnpm lint
 ```
+
+If you are working from a fork, add your fork back as `origin` using the HTTPS or SSH URL shown by GitHub for that fork.
 
 ## Project Structure
 
