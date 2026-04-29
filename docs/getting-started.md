@@ -13,7 +13,7 @@ Welcome to ResiMantle. This guide will help you install and apply the first coat
 At the moment the repository is intended to be run from source.
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/ChocoLabspy/ResiMantle.git
 cd ResiMantle
 pnpm install
 pnpm build

@@ -56,7 +56,7 @@ ResiMantle is intended for that gap:
 ## Quick Start From Source
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/ChocoLabspy/ResiMantle.git
 cd ResiMantle
 pnpm install
 pnpm build
@@ -248,7 +248,7 @@ Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md)
 
 ```bash
 # Development setup
-git clone <your-repository-url>
+git clone https://github.com/ChocoLabspy/ResiMantle.git
 cd ResiMantle
 pnpm install
 pnpm build

@@ -7,19 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-04-29
+
 ### Added
-- Initial project structure for ResiMantle monorepo.
-- `apps/cli`: Scaffolded Commander.js CLI application.
-- `packages/core`: Stubbed implementations for all 9 defensive layers:
-  - Surface Coat
-  - AI Defense Layer
-  - Resin Traps
-  - Runtime Monitor
-  - Behavior Model
-  - Deep Seal
-  - Access Gatekeeper
-  - Policy Engine
-  - Audit & Explain
-- `packages/types`: Shared TypeScript interfaces and types.
-- GitHub Actions CI/CD workflows for linting, testing, and security auditing.
-- Professional open-source documentation including README, SECURITY, and CONTRIBUTING guides.
+- Non-invasive runtime wrapping for Node.js processes through the CLI and preload layer.
+- Local sidecar control plane with scoped bootstrap, heartbeat attestation, and adaptive containment updates.
+- Capability-scoped containment for reads, processes, and sockets, including inheritance across child processes and worker threads.
+- Compatibility baseline learning that can auto-apply safe allowlist rules to live containment.
+- Parent-child lineage tracking in control snapshots and operator-facing summaries.
+- Nine defensive layers covering surface analysis, AI defense, traps, runtime monitoring, behavior, sealing, access control, policy, and audit.
+- GitHub automation for CI, security auditing, and tag-based release publishing.
+
+### Changed
+- Repository metadata, documentation, and contribution guidance now point to the public GitHub repository.
+- Root test script now uses the stable Vitest invocation validated for this repository.
+
+### Verified
+- Workspace typecheck passes.
+- Workspace build passes.
+- Full Vitest suite passes with 39 tests.

@@ -20,11 +20,11 @@ This project follows the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.
 
 ## Getting Started
 
-1. Fork the repository
-2. Clone your fork: `git clone <your-fork-url>`
-3. Create a feature branch: `git checkout -b feature/your-feature-name`
-4. Make your changes
-5. Submit a pull request
+1. Fork the repository if you do not have direct write access
+2. Clone the repository: `git clone https://github.com/ChocoLabspy/ResiMantle.git`
+3. If you are working from a fork, update `origin` to your fork and keep `upstream` pointed at the main repository
+4. Create a feature branch: `git checkout -b feature/your-feature-name`
+5. Make your changes and submit a pull request
 
 ## Development Setup
 
@@ -37,9 +37,10 @@ This project follows the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.
 
 ```bash
 # Clone the repository
-git clone <your-fork-url>
+git clone https://github.com/ChocoLabspy/ResiMantle.git
 cd ResiMantle
-git remote add upstream <upstream-repository-url>
+git remote rename origin upstream
+git remote add origin https://github.com/<your-github-user>/ResiMantle.git
 
 # Install dependencies
 pnpm install
